@@ -1,0 +1,12 @@
+.cell {
+  background: red;
+  border: 2px solid black;
+  float: left;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 80px;
+}
