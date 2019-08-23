@@ -5,6 +5,9 @@ import Homepage from "./home";
 import Schedule from "./schedule";
 import Numbergrid from "./number-grid";
 import Postinfo from "./postdata";
+import Posts from "./posts";
+import {} from "./";
+import Createpost from "./create-blog";
 function Page() {
   return (
     <BrowserRouter>
@@ -16,6 +19,8 @@ function Page() {
             <Route path="/menu" component={Menubar} />
             <Route path="/schedule" component={Schedule} />
             <Route path="/postinfo/:id" component={Postinfo} />
+            <Route path="/postinfo" component={Posts} />
+            <Route path="/createpost" component={Createpost} />
             <Route path="/:id" component={Child} />
           </Switch>
         </div>
