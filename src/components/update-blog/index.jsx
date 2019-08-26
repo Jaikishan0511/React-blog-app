@@ -1,12 +1,24 @@
 import React from "react";
 import axios from "axios";
-class Createpost extends React.Component {
+
+class Updatepost extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       title: "",
       description: ""
     };
+  }
+  async componentDidMount() {
+    const {
+      match: { params }
+    } = this.props;
+    const responseData = await axios.get(`/api/post/${params.id}`);
+    const { title, description } = responseData.data.result;
+    this.setState({
+      title,
+      description
+    });
   }
   handleChangetitle = event => {
     this.setState({ title: event.target.value });
@@ -17,9 +29,12 @@ class Createpost extends React.Component {
   handleSubmit = () => {
     const { title, description } = this.state;
     if (title && description) {
+      const {
+        match: { params }
+      } = this.props;
       axios({
-        method: "post",
-        url: "/api/post",
+        method: "put",
+        url: `/api/post/${params.id}`,
         data: {
           title,
           description
@@ -30,7 +45,6 @@ class Createpost extends React.Component {
       });
     }
   };
-
   render() {
     return (
       <div>
@@ -47,4 +61,4 @@ class Createpost extends React.Component {
     );
   }
 }
-export default Createpost;
+export default Updatepost;
