@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menubar snapshot renders 1`] = `
+<div>
+  <ul>
+    <li>
+      list1
+    </li>
+    <li>
+      list2
+    </li>
+    <li>
+      list3
+    </li>
+  </ul>
+</div>
+`;

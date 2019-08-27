@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Postinfo snapshot renders 1`] = `
+<div>
+  <div>
+    <img
+      alt="loading..."
+      src="/Pacman-1s-200px.gif"
+    />
+    ;
+  </div>
+</div>
+`;

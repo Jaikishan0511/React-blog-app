@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Numbergrid snapshot renders 1`] = `
+<div
+  className="content"
+  id="content"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="cell"
+      id="cell"
+      onClick={[Function]}
+    />
+    <div
+      className="cell"
+      id="cell"
+      onClick={[Function]}
+    />
+    <div
+      className="cell"
+      id="cell"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="cell"
+      id="cell"
+      onClick={[Function]}
+    />
+    <div
+      className="cell"
+      id="cell"
+      onClick={[Function]}
+    />
+    <div
+      className="cell"
+      id="cell"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="cell"
+      id="cell"
+      onClick={[Function]}
+    />
+    <div
+      className="cell"
+      id="cell"
+      onClick={[Function]}
+    />
+    <div
+      className="cell"
+      id="cell"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;

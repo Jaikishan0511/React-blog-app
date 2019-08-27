@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`homepage snapshot renders 1`] = `
+<div>
+  <h1>
+    Welcome to the new Webpage!
+  </h1>
+</div>
+`;
