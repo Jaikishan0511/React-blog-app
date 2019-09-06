@@ -9,6 +9,7 @@ import Posts from "./posts";
 import {} from "./";
 import Createpost from "./create-blog";
 import Updatepost from "./update-blog";
+import Form from "./form";
 function Page() {
   return (
     <BrowserRouter>
@@ -23,6 +24,7 @@ function Page() {
             <Route path="/postinfo" component={Posts} />
             <Route path="/createpost" component={Createpost} />
             <Route path="/updatepost/:id" component={Updatepost} />
+            <Route path="/form" component={Form} />
             <Route path="/:id" component={Child} />
           </Switch>
         </div>
