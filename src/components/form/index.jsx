@@ -23,14 +23,14 @@ class Form extends React.Component {
       this.setState({
         errEmail: false
       });
-      return this.state.errEmail;
+      return;
     }
     if (name === "password" && validPwdRegex.test(value)) {
       console.log("inside email if...");
       this.setState({
         errPassword: false
       });
-      return this.state.errPassword;
+      return;
     }
   };
   handleEmailBlur = event => {
@@ -38,7 +38,7 @@ class Form extends React.Component {
       this.setState({
         errEmail: true
       });
-      return this.state.errEmail;
+      return;
     }
   };
   handlePasswordBlur = event => {
